@@ -19,6 +19,7 @@ export default function AdminLayout({ children }) {
                     <SidebarLink href="/admin/users" label="Users" />
                     <SidebarLink href="/admin/community" label="Community Settings" />
                     <SidebarLink href="#" label="Gallery" />
+                    <SidebarLink href="#" label="Test" />
                 </nav>
 
                 {/* Footer */}
