@@ -1,5 +1,11 @@
 ## STEP AFTER CLONING
 
 ```bash
-composer install
+composer self-update
+```
+
+#rename .env.example to .env
+
+```bash
+php artisan key:generate
 ```
