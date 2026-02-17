@@ -1,8 +1,12 @@
-export default function ApplicationLogo({ className = '' }) {
+export default function ApplicationLogo({ className = "", community }) {
     return (
         <img
-            src="/storage/community/DKQuafVzEhz6490ai0UezyLzAumLHcvGXCNewhxa.png"
-            alt="Artisan Tech House"
+            src={
+                community?.logo
+                    ? `/storage/${community.logo}`
+                    : "/storage/community/a.png"
+            }
+            alt={community?.name || "Artisan Tech House"}
             className={className}
         />
     );
